@@ -3,7 +3,7 @@
   <include file = "$(find basic_urdf_tutorial)/launch/urdf_tutorial.launch"/>
   
   <!--t265 Camera-->
-  <include file = "$(find realsense2_camera)/launch/rs_t265.launch"/>
+  <include file = "$(find realsense2_camera)/launch/rs_d400_and_t265.launch"/>
 
   <!--Lidar-->
   <include file = "$(find rplidar_ros)/launch/rplidar_s2.launch"/>
