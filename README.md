@@ -1,2 +1,13 @@
 # Delivery-bot-KMU
-GIt 작업자 : 김기현,안태현,기운찬
+
+- ROS **noetic** install
+  
+- rplidar
+
+- realsense camera (T265,D435i)
+
+- cartographer slam
+
+- navigation stack
+
+- Yolo v5~7
