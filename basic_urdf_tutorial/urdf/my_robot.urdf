@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot name="my_robot">
+  <link name="base_footprint"/>
+  <link name="base_link"/>
+  <link name="rgbd_link"/>
+  <link name="base_scan"/>
+  <link name="wheel_left_front_link"/>
+  <link name="wheel_right_front_link"/>
+  <link name="wheel_left_back_link"/>
+  <link name="wheel_right_back_link"/>
+
+  <joint name="foot_base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.73"/>
+  </joint>
+
+  <joint name="base_rgbd_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="rgbd_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.045"/>
+  </joint>
+
+  <joint name="base_scan_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_scan"/>
+    <origin rpy="0 0 0" xyz="-0.305 0 -0.075"/>
+  </joint>
+
+  <joint name="base_left_front_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_left_front_link"/>
+    <origin rpy="0 0 0" xyz="-0.1 0.25 -0.62"/>
+  </joint>
+
+  <joint name="base_right_front_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_right_front_link"/>
+    <origin rpy="0 0 0" xyz="-0.1 -0.25 -0.62"/>
+  </joint>
+
+  <joint name="base_right_back_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_right_back_link"/>
+    <origin rpy="0 0 0" xyz="-0.60 -0.155 -0.62"/>
+  </joint>
+
+  <joint name="base_left_back_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="wheel_left_back_link"/>
+    <origin rpy="0 0 0" xyz="-0.60 0.155 -0.62"/>
+  </joint> 
+</robot>
