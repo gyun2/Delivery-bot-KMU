@@ -1,0 +1,13 @@
+train: ./datasets/number_Detect/train/images
+val: ./datasets/number_Detect/valid/images
+test: ./datasets/number_Detect/test/images
+
+nc: 13
+names: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'l', 'undefined', 'x']
+
+roboflow:
+  workspace: project-qlmwa
+  project: number-fuieb
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-qlmwa/number-fuieb/dataset/1
